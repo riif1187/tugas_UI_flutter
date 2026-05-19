@@ -1,30 +1,6 @@
 import 'package:flutter/material.dart';
-import '../widgets/post_card.dart';
-import '../models/post_model.dart';
 
-//----Data Dummy----//
-final List<Post> _dummyPosts = [
-  const Post(
-    username: 'syafiq.dev',
-    avatarUrl: 'https://i.pravatar.cc/150?img=47',
-    location: 'Location',
-    imageUrl: 'https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=800',
-    likes: 1247,
-    caption: 'engineer is easy',
-    commentCount: 89,
-    timeAgo: '2 hours ago',
-  ),
-  const Post(
-    username: 'flutter.id',
-    avatarUrl: 'https://i.pravatar.cc/150?img=12',
-    location: 'Jakarta, Indonesia',
-    imageUrl: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800',
-    likes: 832,
-    caption: 'Another beautiful day 🏔️ #nature #photography',
-    commentCount: 42,
-    timeAgo: '5 hours ago',
-  ),
-];
+
 
 class FeedScreen extends StatelessWidget {
   const FeedScreen({super.key});
