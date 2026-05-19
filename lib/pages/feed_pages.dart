@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../widgets/post_card.dart';
 import '../models/post_model.dart';
-
+import '../widgets/stories_section.dart';
 
 //----Data Dummy----//
 final List<Post> _dummyPosts = [
@@ -47,7 +47,7 @@ class FeedPages extends StatelessWidget {
       appBar: _buildAppBar(),
       body: ListView(
         children: [
-
+          const StoriesSection(),
  
           // ── Daftar post ──
           ..._dummyPosts.map((post) => PostCard(post: post)),
