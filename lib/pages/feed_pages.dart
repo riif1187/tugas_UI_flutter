@@ -3,12 +3,11 @@ import '../widgets/post_card.dart';
 import '../models/post_model.dart';
 
 
-
 //----Data Dummy----//
 final List<Post> _dummyPosts = [
   const Post(
     username: 'syafiq.dev',
-    avatarUrl: 'https://i.pravatar.cc/150?img=47',
+    avatarUrl: 'https://images.unsplash.com/photo-1457449940276-e8deed18bfff?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHByb2ZpbCUyMGluc3RhZ3JhbXxlbnwwfHwwfHx8MA%3D%3D',
     location: 'Location',
     imageUrl: 'https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=800',
     likes: 1247,
@@ -18,13 +17,23 @@ final List<Post> _dummyPosts = [
   ),
   const Post(
     username: 'flutter.id',
-    avatarUrl: 'https://i.pravatar.cc/150?img=12',
+    avatarUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRlnAzWnTQfjwm5bAtSQUNtF3O9qFUWxmIDQ&s',
     location: 'Jakarta, Indonesia',
     imageUrl: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800',
     likes: 832,
     caption: 'Another beautiful day 🏔️ #nature #photography',
     commentCount: 42,
     timeAgo: '5 hours ago',
+  ),
+  const Post(
+    username: 'gina.docker',
+    avatarUrl: 'https://media.licdn.com/dms/image/v2/C4D10AQFMbWrYCIKq0Q/image-shrink_800/image-shrink_800/0/1669336391316?e=2147483647&v=beta&t=cMauHwd-SHyG_4_JU8C3xJ932cJr7nZXqEjrtk4NSkU',
+    location: 'kalimantan, Indonesia',
+    imageUrl: 'https://images.unsplash.com/photo-1736523075712-398e8a18767a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    likes: 832,
+    caption: 'Hari cerah #nature #photography',
+    commentCount: 42,
+    timeAgo: '1 hours ago',
   ),
 ];
 
@@ -38,7 +47,6 @@ class FeedPages extends StatelessWidget {
       appBar: _buildAppBar(),
       body: ListView(
         children: [
-          // ── Baris stories ──
 
  
           // ── Daftar post ──
