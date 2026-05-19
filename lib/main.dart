@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
           surfaceTintColor: Colors.white,
         ),
       ),
-      home: const FeedScreen(),
+      home: const FeedPages(),
     );
   }
 }
